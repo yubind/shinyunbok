@@ -1,0 +1,17 @@
+{
+  "name": "shin_yunbok",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o public/css/ --recursive",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "node-sass": "^4.10.0"
+  }
+}
