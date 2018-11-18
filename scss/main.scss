@@ -1,0 +1,73 @@
+@import 'config';
+@import 'menu';
+
+//general
+html, body {
+    box-sizing: border-box;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+    &:focus {
+        outline: none;
+    }
+    
+    &:active {
+        outline: none;
+    }
+ }
+ 
+a {
+    text-decoration: none;
+    color: inherit;
+    
+    &:visited {
+        color: inherit;
+    }
+    
+    &:active {
+        color: inherit;
+    }
+    
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+//index 
+.bg {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index {
+    overflow: hidden;
+    
+    .index-content {
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 121px);
+        margin-bottom: 4rem;
+        
+        .index-btn {
+            margin-top: 1rem;
+            @include learnMore;
+        }
+    }
+}
+
+
