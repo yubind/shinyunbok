@@ -9,6 +9,10 @@ html, body {
     height: 100%;
 }
 
+body {
+    display: none;
+}
+
 *, *:before, *:after {
     margin: 0;
     padding: 0;
