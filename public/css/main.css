@@ -1,23 +1,28 @@
-.menu {
-  height: 100%;
+body .menu {
+  position: fixed;
+  top: 0;
   width: 100%;
+  height: 100%;
   opacity: 0.8;
   z-index: 3;
-  position: absolute;
+  visibility: hidden;
   transition: all 0.3s ease-out; }
-  .menu-brand {
+  body .menu-brand {
     width: 50%;
     height: 100%;
     background-color: #2f2e54;
-    padding-top: 2rem; }
-    .menu-brand .brand {
+    padding-top: 2rem;
+    z-index: 3; }
+    body .menu-brand .brand {
       font-size: 7rem;
       text-align: center; }
-  .menu-items {
+  body .menu-items {
     width: 50%;
     height: 100%;
     background-color: #542e2e;
     font-size: 2.3rem; }
+  body .menu.show {
+    visibility: visible !important; }
 
 .menu-btn {
   position: absolute;
