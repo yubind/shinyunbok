@@ -1,4 +1,10 @@
-$black: #110a11;
+$white: #f1f0f0;
+$blue: #2d2c3c;
+$red: #de1f26;
+$yellow: #e1873d;
+$green: #92a47d;
+$font_basic: 'Advent Pro', sans-serif;
+$font_brand: 'Unica One', cursive;
 
 @mixin textShadow {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -15,7 +21,7 @@ $black: #110a11;
 }
 
 @mixin easeOut {
-    transition: all 0.3s ease-out;
+    transition: all 0.25s ease-out;
 }
 
 
