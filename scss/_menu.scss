@@ -1,4 +1,4 @@
-body .menu {
+.menu {
     position: fixed;
     top: 0;
     width: 100%;
@@ -11,25 +11,39 @@ body .menu {
     &-brand {
         width: 50%;
         height: 100%;
-        background-color: #2f2e54;
+        background-color: #141419;
+        color: #f1dede;
         padding-top: 2rem;
         z-index: 3;
+        transform: translate3d(0, -100%, 0);
+        @include easeOut;
         
         .brand {
-            font-size: 7rem;
+            font-size: 6.5rem;
             text-align: center;
+        }
+        
+        &.show {
+            transform: translate3d(0, 0, 0);
         }
     }
     
     &-items {
         width: 50%;
         height: 100%;
-        background-color: #542e2e;
+        background-color: #f1dede;
+        color: $black;
         font-size: 2.3rem;
+        transform: translate3d(0, 100%, 0);
+        @include easeOut;
+        
+        &.show {
+            transform: translate3d(0, 0, 0);
+        }
     }
     
     &.show {
-        visibility: visible !important;
+        visibility: visible;
     }
 }
 
@@ -42,11 +56,11 @@ body .menu {
     @include easeOut;
         
     .btn-line {
-        width: 25px;
-        height: 2px;
+        width: 27px;
+        height: 3px;
         margin: 0 0 5px 0;
-        background-color: #fff;
-        border-radius: 50px;
+        background-color: $black;
+        border-radius: 30%;
         @include easeOut;
     }
     
@@ -54,7 +68,7 @@ body .menu {
         
         .btn-line {
             &:nth-child(1) {
-                transform: rotate(45deg) translate(5px, 5px);
+                transform: rotate(45deg) translate(7px, 6px)
             }
             
             &:nth-child(2) {

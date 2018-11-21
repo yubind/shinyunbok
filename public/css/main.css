@@ -1,4 +1,4 @@
-body .menu {
+.menu {
   position: fixed;
   top: 0;
   width: 100%;
@@ -7,22 +7,32 @@ body .menu {
   z-index: 3;
   visibility: hidden;
   transition: all 0.3s ease-out; }
-  body .menu-brand {
+  .menu-brand {
     width: 50%;
     height: 100%;
-    background-color: #2f2e54;
+    background-color: #141419;
+    color: #f1dede;
     padding-top: 2rem;
-    z-index: 3; }
-    body .menu-brand .brand {
-      font-size: 7rem;
+    z-index: 3;
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.3s ease-out; }
+    .menu-brand .brand {
+      font-size: 6.5rem;
       text-align: center; }
-  body .menu-items {
+    .menu-brand.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-items {
     width: 50%;
     height: 100%;
-    background-color: #542e2e;
-    font-size: 2.3rem; }
-  body .menu.show {
-    visibility: visible !important; }
+    background-color: #f1dede;
+    color: #110a11;
+    font-size: 2.3rem;
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.3s ease-out; }
+    .menu-items.show {
+      transform: translate3d(0, 0, 0); }
+  .menu.show {
+    visibility: visible; }
 
 .menu-btn {
   position: absolute;
@@ -32,14 +42,14 @@ body .menu {
   z-index: 3;
   transition: all 0.3s ease-out; }
   .menu-btn .btn-line {
-    width: 25px;
-    height: 2px;
+    width: 27px;
+    height: 3px;
     margin: 0 0 5px 0;
-    background-color: #fff;
-    border-radius: 50px;
+    background-color: #110a11;
+    border-radius: 30%;
     transition: all 0.3s ease-out; }
   .menu-btn.close .btn-line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px); }
+    transform: rotate(45deg) translate(7px, 6px); }
   .menu-btn.close .btn-line:nth-child(2) {
     opacity: 0; }
   .menu-btn.close .btn-line:nth-child(3) {
