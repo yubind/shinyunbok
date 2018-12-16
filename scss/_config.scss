@@ -10,14 +10,20 @@ $font_brand: 'Unica One', cursive;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+@mixin boxShadow {
+    box-shadow: 1px 2px 18px #000;
+}
+
 @mixin learnMore {
     padding: .8rem 2.5rem;
-    border: 2px solid #fff;
-    border-radius: 30px;
+    border-radius: 4px;
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
     outline: none;
+    background: linear-gradient(20deg, $red 50%, $blue 50%);
+    -webkit-background-clip: text;
+    position: relative;
 }
 
 @mixin easeOut {
