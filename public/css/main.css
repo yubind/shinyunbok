@@ -10,16 +10,18 @@
     width: 50%;
     height: 100%;
     background-color: #f1f0f0;
-    padding-top: 2rem;
     z-index: 3;
     transform: translate3d(0, -100%, 0);
     font-family: "Unica One", cursive;
     opacity: 0.8;
     transition: all 0.25s ease-out; }
     .menu-brand .brand {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
       font-size: 6rem;
       text-align: center;
-      opacity: 1;
       color: #e1873d; }
     .menu-brand.show {
       transform: translate3d(0, 0, 0); }
