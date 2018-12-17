@@ -4,7 +4,9 @@ $red: #de1f26;
 $yellow: #e1873d;
 $green: #92a47d;
 $font_basic: 'Advent Pro', sans-serif;
-$font_brand: 'Unica One', cursive;
+$font_brand: 'Staatliches', cursive;
+$font_thin: 'Work Sans', sans-serif;;
+
 
 @mixin textShadow {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -30,4 +32,19 @@ $font_brand: 'Unica One', cursive;
     transition: all 0.25s ease-out;
 }
 
+@keyframes fadeInUp {
+    0% { 
+        opacity: 0;
+        transform: translate3d(0, 70%, 0);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: tranlate3d(0, 0, 0);
+    }
+}
+
+.fadeinup {
+    animation: 1.5s forwards fadeInUp;
+}
 

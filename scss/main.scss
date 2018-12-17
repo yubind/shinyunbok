@@ -66,17 +66,23 @@ li {
     .index-content {
         position: absolute;
         bottom: 0;
-        left: calc(50% - 121px);
+        left: calc(50% - 325px);
         margin-bottom: 4rem;
         
-        .index-name {
-            font-family: $font_brand;
+        .index-txt {
+            font-family: $font_thin;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 300;
+            text-transform: uppercase;
         }
         
         .index-btn {
             color: $white;
-            margin-top: 1rem;
+            margin-top: 4rem;
             border-bottom: 1px solid rgba(255, 255, 255, 0);
+            animation-delay: 1s;
+            opacity: 0;
             @include learnMore;
             @include easeOut;
             @include boxShadow;
@@ -95,7 +101,6 @@ li {
                 left: 0;
                 right: 0;
                 background: linear-gradient(15deg, $blue 50%, $red 50%);
-                // z-index: 0;
             }
             
             &:hover, &:hover:after {

@@ -1,3 +1,14 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 70%, 0); }
+  100% {
+    opacity: 1;
+    transform: tranlate3d(0, 0, 0); } }
+
+.fadeinup {
+  animation: 1.5s forwards fadeInUp; }
+
 .menu {
   position: fixed;
   top: 0;
@@ -12,7 +23,7 @@
     background-color: #f1f0f0;
     z-index: 3;
     transform: translate3d(0, -100%, 0);
-    font-family: "Unica One", cursive;
+    font-family: "Staatliches", cursive;
     opacity: 0.8;
     transition: all 0.25s ease-out; }
     .menu-brand .brand {
@@ -20,7 +31,8 @@
       flex-direction: column;
       justify-content: center;
       height: 100%;
-      font-size: 6rem;
+      font-size: 5rem;
+      font-family: 'Major Mono Display', monospace;
       text-align: center;
       color: #e1873d; }
     .menu-brand.show {
@@ -35,13 +47,15 @@
     transition: all 0.25s ease-out; }
     .menu-items .menu-item {
       transform: translate3d(600px, 0, 0);
+      text-transform: uppercase;
       opacity: 0;
       transition: all 0.25s ease-out; }
       .menu-items .menu-item.show {
         transform: translate3d(0, 0, 0);
         opacity: 1; }
       .menu-items .menu-item:hover {
-        color: #92a47d; }
+        color: #92a47d;
+        border-bottom: 1px solid #92a47d; }
     .menu-items.show {
       transform: translate3d(0, 0, 0); }
   .menu.show {
@@ -125,14 +139,20 @@ li {
   .index .index-content {
     position: absolute;
     bottom: 0;
-    left: calc(50% - 121px);
+    left: calc(50% - 325px);
     margin-bottom: 4rem; }
-    .index .index-content .index-name {
-      font-family: "Unica One", cursive; }
+    .index .index-content .index-txt {
+      font-family: "Work Sans", sans-serif;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 300;
+      text-transform: uppercase; }
     .index .index-content .index-btn {
       color: #f1f0f0;
-      margin-top: 1rem;
+      margin-top: 4rem;
       border-bottom: 1px solid rgba(255, 255, 255, 0);
+      animation-delay: 1s;
+      opacity: 0;
       padding: .8rem 2.5rem;
       border-radius: 4px;
       text-transform: uppercase;
