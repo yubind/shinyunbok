@@ -1,11 +1,11 @@
 $white: #f1f0f0;
 $blue: #2d2c3c;
-$red: #de1f26;
-$yellow: #e1873d;
+$red: #A04848;
+$yellow: #DD9E28;
 $green: #92a47d;
-$font_basic: 'Advent Pro', sans-serif;
-$font_brand: 'Staatliches', cursive;
-$font_thin: 'Work Sans', sans-serif;;
+$font_basic: 'Josefin Sans', sans-serif;
+$font_btn: 'Dosis', sans-serif;
+$font_thin: 'Work Sans', sans-serif;
 
 
 @mixin textShadow {
@@ -29,7 +29,7 @@ $font_thin: 'Work Sans', sans-serif;;
 }
 
 @mixin easeOut {
-    transition: all 0.25s ease-out;
+    transition: all 0.25s ease-in-out;
 }
 
 @keyframes fadeInUp {

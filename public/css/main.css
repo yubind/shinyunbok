@@ -16,25 +16,26 @@
   height: 100%;
   z-index: 3;
   visibility: hidden;
-  transition: all 0.25s ease-out; }
+  transition: all 0.25s ease-in-out; }
   .menu-brand {
     width: 50%;
     height: 100%;
     background-color: #f1f0f0;
     z-index: 3;
     transform: translate3d(0, -100%, 0);
-    font-family: "Staatliches", cursive;
+    font-family: "Josefin Sans", sans-serif;
     opacity: 0.8;
-    transition: all 0.25s ease-out; }
+    transition: all 0.25s ease-in-out; }
     .menu-brand .brand {
       display: flex;
       flex-direction: column;
       justify-content: center;
       height: 100%;
       font-size: 5rem;
-      font-family: 'Major Mono Display', monospace;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 300;
       text-align: center;
-      color: #e1873d; }
+      color: #DD9E28; }
     .menu-brand.show {
       transform: translate3d(0, 0, 0); }
   .menu-items {
@@ -44,18 +45,17 @@
     color: #f1f0f0;
     font-size: 2.3rem;
     transform: translate3d(0, 100%, 0);
-    transition: all 0.25s ease-out; }
+    transition: all 0.25s ease-in-out; }
     .menu-items .menu-item {
       transform: translate3d(600px, 0, 0);
       text-transform: uppercase;
       opacity: 0;
-      transition: all 0.25s ease-out; }
+      transition: all 0.25s ease-in-out; }
       .menu-items .menu-item.show {
         transform: translate3d(0, 0, 0);
         opacity: 1; }
       .menu-items .menu-item:hover {
-        color: #92a47d;
-        border-bottom: 1px solid #92a47d; }
+        color: #A04848; }
     .menu-items.show {
       transform: translate3d(0, 0, 0); }
   .menu.show {
@@ -76,14 +76,14 @@
   top: 2rem;
   cursor: pointer;
   z-index: 3;
-  transition: all 0.25s ease-out; }
+  transition: all 0.25s ease-in-out; }
   .menu-btn .btn-line {
     width: 27px;
     height: 3px;
     margin: 0 0 5px 0;
     background-color: #f1f0f0;
     border-radius: 30%;
-    transition: all 0.25s ease-out; }
+    transition: all 0.25s ease-in-out; }
   .menu-btn.close .btn-line {
     background-color: #f1f0f0; }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -98,7 +98,7 @@ html, body {
   color: #f1f0f0;
   width: 100%;
   height: 100%;
-  font-family: "Advent Pro", sans-serif; }
+  font-family: "Josefin Sans", sans-serif; }
 
 body {
   display: none; }
@@ -159,15 +159,16 @@ li {
       letter-spacing: 2px;
       cursor: pointer;
       outline: none;
-      background: linear-gradient(20deg, #de1f26 50%, #2d2c3c 50%);
+      background: linear-gradient(20deg, #A04848 50%, #2d2c3c 50%);
       -webkit-background-clip: text;
       position: relative;
-      transition: all 0.25s ease-out;
+      transition: all 0.25s ease-in-out;
       box-shadow: 1px 2px 18px #000; }
       .index .index-content .index-btn a {
         position: relative;
         z-index: 1;
-        font-weight: bold; }
+        font-weight: 400;
+        font-family: "Dosis", sans-serif; }
       .index .index-content .index-btn:after {
         content: "";
         position: absolute;
@@ -175,11 +176,11 @@ li {
         bottom: 0;
         left: 0;
         right: 0;
-        background: linear-gradient(15deg, #2d2c3c 50%, #de1f26 50%); }
+        background: linear-gradient(15deg, #2d2c3c 50%, #DD9E28 50%); }
       .index .index-content .index-btn:hover, .index .index-content .index-btn:hover:after {
         background-position: 0;
         border-bottom: 1px solid white; }
     .index .index-content .index-btn, .index .index-content .index-btn:after {
-      background-size: 300%;
+      background-size: 350%;
       background-position: 100%;
       transition: 1s; }

@@ -13,7 +13,7 @@
         background-color: $white;
         z-index: 3;
         transform: translate3d(0, -100%, 0);
-        font-family: $font_brand;
+        font-family: $font_basic;
         opacity: 0.8;
         @include easeOut;
         
@@ -23,7 +23,8 @@
             justify-content: center;
             height: 100%;
             font-size: 5rem;
-            font-family: 'Major Mono Display', monospace;
+            font-family: $font_basic;
+            font-weight: 300;
             text-align: center;
             color: $yellow;
         }
@@ -54,8 +55,7 @@
             }
             
             &:hover {
-                color: $green;
-                border-bottom: 1px solid $green;
+                color: $red;
             }
         }
         

@@ -90,7 +90,8 @@ li {
             a {
                 position: relative;
                 z-index: 1;
-                font-weight: bold;
+                font-weight: 400;
+                font-family: $font_btn;
             }
             
             &:after {
@@ -100,7 +101,7 @@ li {
                 bottom: 0;
                 left: 0;
                 right: 0;
-                background: linear-gradient(15deg, $blue 50%, $red 50%);
+                background: linear-gradient(15deg, $blue 50%, $yellow 50%);
             }
             
             &:hover, &:hover:after {
@@ -110,7 +111,7 @@ li {
         }
         
         .index-btn, .index-btn:after {
-            background-size: 300%;
+            background-size: 350%;
             background-position: 100%;
             transition: 1s;
         }
