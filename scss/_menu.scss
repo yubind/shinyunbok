@@ -26,7 +26,7 @@
             font-family: $font_basic;
             font-weight: 300;
             text-align: center;
-            color: $yellow;
+            color: $blue;
         }
         
         &.show {
@@ -55,7 +55,7 @@
             }
             
             &:hover {
-                color: $red;
+                color: $yellow;
             }
         }
         
@@ -84,11 +84,11 @@
     @include easeOut;
         
     .btn-line {
-        width: 27px;
-        height: 3px;
+        width: 28px;
+        height: 2px;
         margin: 0 0 5px 0;
         background-color: $white;
-        border-radius: 30%;
+        border-radius: 30px;
         @include easeOut;
     }
     
@@ -98,7 +98,7 @@
             background-color: $white;
             
             &:nth-child(1) {
-                transform: rotate(45deg) translate(7px, 6px)
+                transform: rotate(42deg) translate(7px, 6px);
             }
             
             &:nth-child(2) {
@@ -106,7 +106,7 @@
             }
             
             &:nth-child(3) {
-                transform: rotate(135deg) translate(-5px, 5px);
+                transform: rotate(137deg) translate(-4px, 4px);
             }
         }
     }

@@ -64,13 +64,10 @@ li {
     overflow: hidden;
     
     .index-content {
-        position: absolute;
-        bottom: 0;
-        left: calc(50% - 325px);
-        margin-bottom: 4rem;
+        height: 100%;
         
         .index-txt {
-            font-family: $font_thin;
+            margin-top: 6rem;
             text-align: center;
             font-size: 3rem;
             font-weight: 300;
@@ -101,7 +98,7 @@ li {
                 bottom: 0;
                 left: 0;
                 right: 0;
-                background: linear-gradient(15deg, $blue 50%, $yellow 50%);
+                background: linear-gradient(15deg, $blue 50%, $red 50%);
             }
             
             &:hover, &:hover:after {
@@ -114,6 +111,25 @@ li {
             background-size: 350%;
             background-position: 100%;
             transition: 1s;
+        }
+    }
+}
+
+
+//life
+.life-content {
+    background-color: $blue;
+    height: 100%;
+    padding: 6rem 5rem;
+    
+    .life-description {
+        .life-description-img {
+            width: 300px;
+            height: 360px;
+        }
+        
+        .life-description-p {
+            margin: 1rem;
         }
     }
 }
