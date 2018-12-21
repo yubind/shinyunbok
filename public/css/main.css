@@ -23,7 +23,7 @@
     background-color: #f1f0f0;
     z-index: 3;
     transform: translate3d(0, -100%, 0);
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Work Sans", sans-serif;
     opacity: 0.8;
     transition: all 0.25s ease-out; }
     .menu-brand .brand {
@@ -32,7 +32,7 @@
       justify-content: center;
       height: 100%;
       font-size: 5rem;
-      font-family: "Josefin Sans", sans-serif;
+      font-family: "Permanent Marker", cursive;
       font-weight: 300;
       text-align: center;
       color: #2d2c3c; }
@@ -98,7 +98,7 @@ html, body {
   color: #f1f0f0;
   width: 100%;
   height: 100%;
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Work Sans", sans-serif; }
 
 body {
   display: none; }
@@ -141,8 +141,11 @@ li {
     .index .index-content .index-txt {
       margin-top: 6rem;
       text-align: center;
-      font-size: 3rem;
+      padding: 1rem;
+      font-family: "Permanent Marker", cursive;
+      font-size: 2rem;
       font-weight: 300;
+      border: 3px solid #f1f0f0;
       text-transform: uppercase; }
     .index .index-content .index-btn {
       color: #f1f0f0;
@@ -165,7 +168,7 @@ li {
         position: relative;
         z-index: 1;
         font-weight: 400;
-        font-family: "Dosis", sans-serif; }
+        font-family: "Encode Sans Condensed", sans-serif; }
       .index .index-content .index-btn:after {
         content: "";
         position: absolute;
@@ -184,10 +187,31 @@ li {
 
 .life-content {
   background-color: #2d2c3c;
-  height: 100%;
-  padding: 6rem 5rem; }
-  .life-content .life-description .life-description-img {
-    width: 300px;
-    height: 360px; }
-  .life-content .life-description .life-description-p {
-    margin: 1rem; }
+  padding: 6rem 4rem; }
+  .life-content .life-header-sm {
+    position: relative;
+    margin: 4rem 2rem;
+    font-family: "Encode Sans Condensed", sans-serif; }
+    .life-content .life-header-sm p:after {
+      content: "";
+      position: absolute;
+      top: 20%;
+      bottom: 0;
+      right: 0;
+      height: 2px;
+      width: 33%;
+      background-color: #f1f0f0; }
+  .life-content .life-description {
+    margin: 2rem; }
+    .life-content .life-description .life-description-img {
+      width: 300px;
+      height: 360px; }
+    .life-content .life-description .life-description-p {
+      margin: 1rem;
+      font-family: "Encode Sans Condensed", sans-serif; }
+      .life-content .life-description .life-description-p *:first-letter {
+        font-size: 200%;
+        font-weight: bold;
+        opacity: .6;
+        color: #DD9E28;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }

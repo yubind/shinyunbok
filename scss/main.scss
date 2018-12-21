@@ -69,8 +69,11 @@ li {
         .index-txt {
             margin-top: 6rem;
             text-align: center;
-            font-size: 3rem;
+            padding: 1rem;
+            font-family: $font_brand;
+            font-size: 2rem;
             font-weight: 300;
+            border: 3px solid $white;
             text-transform: uppercase;
         }
         
@@ -88,7 +91,7 @@ li {
                 position: relative;
                 z-index: 1;
                 font-weight: 400;
-                font-family: $font_btn;
+                font-family: $font_text;
             }
             
             &:after {
@@ -119,10 +122,30 @@ li {
 //life
 .life-content {
     background-color: $blue;
-    height: 100%;
-    padding: 6rem 5rem;
+    padding: 6rem 4rem;
+    
+    .life-header-sm {
+        position: relative;
+        margin: 4rem 2rem;
+        font-family: $font_text;
+
+        p {
+            &:after {
+                content: "";
+                position: absolute;
+                top: 20%;
+                bottom: 0;
+                right: 0;
+                height: 2px;
+                width: 33%;
+                background-color: $white;
+            }
+        }
+    }
     
     .life-description {
+        margin: 2rem;
+        
         .life-description-img {
             width: 300px;
             height: 360px;
@@ -130,6 +153,15 @@ li {
         
         .life-description-p {
             margin: 1rem;
+            font-family: $font_text;
+            
+            *:first-letter { 
+              font-size: 200%;
+              font-weight: bold;
+              opacity: .6;
+              color: $yellow;
+              @include textShadow;
+            }
         }
     }
 }
